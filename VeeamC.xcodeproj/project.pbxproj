@@ -1,0 +1,368 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F9C59856275191770087DAB4 /* BaseProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9C59855275191770087DAB4 /* BaseProcessor.cpp */; };
+		F9C59868275191E70087DAB4 /* Hasher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9C59858275191E60087DAB4 /* Hasher.cpp */; };
+		F9C59869275191E70087DAB4 /* BlocksHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9C59859275191E60087DAB4 /* BlocksHandler.cpp */; };
+		F9C5986A275191E70087DAB4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9C5985B275191E60087DAB4 /* main.cpp */; };
+		F9C5986B275191E70087DAB4 /* StreamReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9C59863275191E70087DAB4 /* StreamReader.cpp */; };
+		F9C5986C275191E70087DAB4 /* StreamWriter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9C59864275191E70087DAB4 /* StreamWriter.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F9A30E0C2750E74B0033BB3E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F9A30E0E2750E74C0033BB3E /* VeeamC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VeeamC; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9C59855275191770087DAB4 /* BaseProcessor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseProcessor.cpp; sourceTree = "<group>"; };
+		F9C59857275191A60087DAB4 /* BaseProcessor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseProcessor.h; sourceTree = "<group>"; };
+		F9C59858275191E60087DAB4 /* Hasher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Hasher.cpp; sourceTree = "<group>"; };
+		F9C59859275191E60087DAB4 /* BlocksHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BlocksHandler.cpp; sourceTree = "<group>"; };
+		F9C5985A275191E60087DAB4 /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
+		F9C5985B275191E60087DAB4 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		F9C5985C275191E60087DAB4 /* CommonHasher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonHasher.h; sourceTree = "<group>"; };
+		F9C5985D275191E60087DAB4 /* BlocksHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlocksHandler.h; sourceTree = "<group>"; };
+		F9C5985E275191E60087DAB4 /* HashTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HashTypes.h; sourceTree = "<group>"; };
+		F9C5985F275191E60087DAB4 /* IStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IStreamWriter.h; sourceTree = "<group>"; };
+		F9C59860275191E60087DAB4 /* QueueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueManager.h; sourceTree = "<group>"; };
+		F9C59861275191E60087DAB4 /* Hasher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hasher.h; sourceTree = "<group>"; };
+		F9C59862275191E60087DAB4 /* StreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamWriter.h; sourceTree = "<group>"; };
+		F9C59863275191E70087DAB4 /* StreamReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StreamReader.cpp; sourceTree = "<group>"; };
+		F9C59864275191E70087DAB4 /* StreamWriter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StreamWriter.cpp; sourceTree = "<group>"; };
+		F9C59865275191E70087DAB4 /* Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Block.h; sourceTree = "<group>"; };
+		F9C59866275191E70087DAB4 /* StreamReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StreamReader.h; sourceTree = "<group>"; };
+		F9C59867275191E70087DAB4 /* IStreamReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IStreamReader.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9A30E0B2750E74B0033BB3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F9A30E052750E74B0033BB3E = {
+			isa = PBXGroup;
+			children = (
+				F9A30E102750E74C0033BB3E /* VeeamTest */,
+				F9A30E0F2750E74C0033BB3E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F9A30E0F2750E74C0033BB3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9A30E0E2750E74C0033BB3E /* VeeamC */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9A30E102750E74C0033BB3E /* VeeamTest */ = {
+			isa = PBXGroup;
+			children = (
+				F9B00B612751A60200A0BD0E /* Hash */,
+				F9B00B602751A54900A0BD0E /* Blocks */,
+				F9C5986D275192D90087DAB4 /* IO */,
+				F9C5985B275191E60087DAB4 /* main.cpp */,
+				F9C59855275191770087DAB4 /* BaseProcessor.cpp */,
+				F9C59857275191A60087DAB4 /* BaseProcessor.h */,
+			);
+			path = VeeamTest;
+			sourceTree = "<group>";
+		};
+		F9B00B602751A54900A0BD0E /* Blocks */ = {
+			isa = PBXGroup;
+			children = (
+				F9C5985A275191E60087DAB4 /* Header.h */,
+				F9C59865275191E70087DAB4 /* Block.h */,
+				F9C59859275191E60087DAB4 /* BlocksHandler.cpp */,
+				F9C5985D275191E60087DAB4 /* BlocksHandler.h */,
+				F9C59860275191E60087DAB4 /* QueueManager.h */,
+			);
+			path = Blocks;
+			sourceTree = "<group>";
+		};
+		F9B00B612751A60200A0BD0E /* Hash */ = {
+			isa = PBXGroup;
+			children = (
+				F9C5985C275191E60087DAB4 /* CommonHasher.h */,
+				F9C59858275191E60087DAB4 /* Hasher.cpp */,
+				F9C59861275191E60087DAB4 /* Hasher.h */,
+				F9C5985E275191E60087DAB4 /* HashTypes.h */,
+			);
+			path = Hash;
+			sourceTree = "<group>";
+		};
+		F9C5986D275192D90087DAB4 /* IO */ = {
+			isa = PBXGroup;
+			children = (
+				F9C5986E275193120087DAB4 /* doc */,
+				F9C59863275191E70087DAB4 /* StreamReader.cpp */,
+				F9C59866275191E70087DAB4 /* StreamReader.h */,
+				F9C59864275191E70087DAB4 /* StreamWriter.cpp */,
+				F9C59862275191E60087DAB4 /* StreamWriter.h */,
+			);
+			path = IO;
+			sourceTree = "<group>";
+		};
+		F9C5986E275193120087DAB4 /* doc */ = {
+			isa = PBXGroup;
+			children = (
+				F9C59867275191E70087DAB4 /* IStreamReader.h */,
+				F9C5985F275191E60087DAB4 /* IStreamWriter.h */,
+			);
+			path = doc;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9A30E0D2750E74B0033BB3E /* VeeamC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9A30E152750E74C0033BB3E /* Build configuration list for PBXNativeTarget "VeeamC" */;
+			buildPhases = (
+				F9A30E0A2750E74B0033BB3E /* Sources */,
+				F9A30E0B2750E74B0033BB3E /* Frameworks */,
+				F9A30E0C2750E74B0033BB3E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VeeamC;
+			productName = VeeamC;
+			productReference = F9A30E0E2750E74C0033BB3E /* VeeamC */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9A30E062750E74B0033BB3E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					F9A30E0D2750E74B0033BB3E = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = F9A30E092750E74B0033BB3E /* Build configuration list for PBXProject "VeeamC" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9A30E052750E74B0033BB3E;
+			productRefGroup = F9A30E0F2750E74C0033BB3E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9A30E0D2750E74B0033BB3E /* VeeamC */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9A30E0A2750E74B0033BB3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9C5986B275191E70087DAB4 /* StreamReader.cpp in Sources */,
+				F9C59868275191E70087DAB4 /* Hasher.cpp in Sources */,
+				F9C59869275191E70087DAB4 /* BlocksHandler.cpp in Sources */,
+				F9C5986A275191E70087DAB4 /* main.cpp in Sources */,
+				F9C59856275191770087DAB4 /* BaseProcessor.cpp in Sources */,
+				F9C5986C275191E70087DAB4 /* StreamWriter.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F9A30E132750E74C0033BB3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/boost/1.76.0/include/;
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/boost/1.76.0/lib/;
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lboost_regex";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F9A30E142750E74C0033BB3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/boost/1.76.0/include/;
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/boost/1.76.0/lib/;
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-lboost_regex";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F9A30E162750E74C0033BB3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/boost/1.76.0/include/;
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/boost/1.76.0/lib/;
+				OTHER_LDFLAGS = "-lboost_regex";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F9A30E172750E74C0033BB3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/boost/1.76.0/include/;
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/boost/1.76.0/lib/;
+				OTHER_LDFLAGS = "-lboost_regex";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9A30E092750E74B0033BB3E /* Build configuration list for PBXProject "VeeamC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9A30E132750E74C0033BB3E /* Debug */,
+				F9A30E142750E74C0033BB3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9A30E152750E74C0033BB3E /* Build configuration list for PBXNativeTarget "VeeamC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9A30E162750E74C0033BB3E /* Debug */,
+				F9A30E172750E74C0033BB3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9A30E062750E74B0033BB3E /* Project object */;
+}
